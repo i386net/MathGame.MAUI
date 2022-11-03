@@ -16,7 +16,19 @@
                 FontSize="32"
                 HorizontalOptions="Center"/>
             <Grid>
-                
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Text="Addition"/>
+                <Button Grid.Column="0" Text="Subtraction"/>
+                <Button Grid.Column="0" Text="Multiplication"/>
+                <Button Grid.Column="0" Text="Division"/>
             </Grid>
         </VerticalStackLayout>
     </ContentView>
