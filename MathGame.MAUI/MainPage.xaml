@@ -47,7 +47,7 @@
                     Grid.ColumnSpan="4"
                     BackgroundColor="Green"
                     Text="View Previous Games"
-                    Clicked="OnViewPrevousGameChosen"/>
+                    Clicked="OnViewPrevousGamesChosen"/>
             </Grid>
         </VerticalStackLayout>
     </ContentView>
