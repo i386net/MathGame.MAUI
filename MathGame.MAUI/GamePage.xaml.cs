@@ -73,11 +73,11 @@ public partial class GamePage : ContentPage
 		}
 		else
 		{
-			GameoVer();
+			GameOver();
 		}
 	}
 
-	private void GameoVer()
+	private void GameOver()
 	{
 		GameOverLabel.Text = $"Game over! Your got {score} out of {totalQuestions}";
 	}
