@@ -16,7 +16,7 @@
             HorizontalOptions="Center"
             FontSize="32"/>
         <Entry
-            x:Name="Answer"
+            x:Name="AnswerEntry"
             HorizontalOptions="Center" />
         <Button
             x:Name="SubmitTheAnswer"
