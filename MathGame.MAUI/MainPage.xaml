@@ -30,14 +30,24 @@
                     Grid.Column="0" 
                     Text="Addition" 
                     Clicked="OnGameChosen"/> <!--if clicked go to GamePage-->
-                <Button Grid.Column="1" Text="Subtraction"/>
-                <Button Grid.Column="2" Text="Multiplication"/>
-                <Button Grid.Column="3" Text="Division"/>
+                <Button 
+                    Grid.Column="1" 
+                    Text="Subtraction" 
+                    Clicked="OnGameChosen"/>
+                <Button 
+                    Grid.Column="2" 
+                    Text="Multiplication" 
+                    Clicked="OnGameChosen" />
+                <Button 
+                    Grid.Column="3" 
+                    Text="Division" 
+                    Clicked="OnGameChosen" />
                 <Button 
                     Grid.Row="1" 
                     Grid.ColumnSpan="4"
                     BackgroundColor="Green"
-                    Text="View Previous Games"/>
+                    Text="View Previous Games"
+                    Clicked="OnViewPrevousGameChosen"/>
             </Grid>
         </VerticalStackLayout>
     </ContentView>
