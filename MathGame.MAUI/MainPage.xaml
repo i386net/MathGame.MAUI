@@ -3,6 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MathGame.MAUI.MainPage">
 
-
+    <ContentView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="50">
+            <Label 
+                Text="This is a math game"
+                FontSize="32"
+                HorizontalOptions="Center"/>
+            <Label 
+                Text="What game would you like to play?"
+                FontSize="32"
+                HorizontalOptions="Center"/>
+            <Grid>
+                
+            </Grid>
+        </VerticalStackLayout>
+    </ContentView>
 
 </ContentPage>
