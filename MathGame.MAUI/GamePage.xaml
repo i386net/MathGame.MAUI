@@ -4,10 +4,12 @@
              x:Class="MathGame.MAUI.GamePage">
 
     <VerticalStackLayout
-        Padding="200"
+        Padding="100"
         Spacing="25">
         <VerticalStackLayout
-            x:Name="QuestionArea">
+            x:Name="QuestionArea"
+            Spacing="25">
+            
             <Label
             x:Name="QuestionLabel"
             VerticalOptions="Center"
@@ -24,13 +26,15 @@
             <Label
             x:Name="AnswerLabel"
             VerticalOptions="Center"
-            HorizontalOptions="Center"/>
+            HorizontalOptions="Center"
+            FontSize="32"/>
         </VerticalStackLayout>
         
         <Label
             x:Name="GameOverLabel"
             VerticalOptions="Center"
-            HorizontalOptions="Center"/>
+            HorizontalOptions="Center"
+            FontSize="32"/>
         <Button 
             IsVisible="false"
             x:Name="BackToMenu"
