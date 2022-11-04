@@ -79,10 +79,17 @@ public partial class GamePage : ContentPage
 
 	private void GameOver()
 	{
+		BackToMenu.IsVisible = true;
+		QuestionArea.IsVisible = false;
 		GameOverLabel.Text = $"Game over! Your got {score} out of {totalQuestions}";
 	}
 
-	private void ProcessAnswer(bool isCorrect)
+	private void OnBackToMenu(object sender, EventArgs e)
+	{
+		Navigation.PushAsync(new MainPage());
+	}
+
+    private void ProcessAnswer(bool isCorrect)
 	{
 		if (isCorrect)
 		{

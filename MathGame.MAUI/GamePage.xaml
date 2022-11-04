@@ -2,35 +2,41 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MathGame.MAUI.GamePage">
-    
+
     <VerticalStackLayout
         Padding="200"
         Spacing="25">
-        <!--<Label 
-            Text="{Binding GameType}"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />-->
-        <Label
+        <VerticalStackLayout
+            x:Name="QuestionArea">
+            <Label
             x:Name="QuestionLabel"
             VerticalOptions="Center"
             HorizontalOptions="Center"
             FontSize="32"/>
-        <Entry
+            <Entry
             x:Name="AnswerEntry"
             HorizontalOptions="Center" />
-        <Button
+            <Button
             x:Name="SubmitTheAnswer"
             Text="Answer"
             Clicked="OnAnswerSubmitted"
             HorizontalOptions="Center" />
-        <Label
+            <Label
             x:Name="AnswerLabel"
             VerticalOptions="Center"
             HorizontalOptions="Center"/>
+        </VerticalStackLayout>
+        
         <Label
             x:Name="GameOverLabel"
             VerticalOptions="Center"
             HorizontalOptions="Center"/>
-            
+        <Button 
+            IsVisible="false"
+            x:Name="BackToMenu"
+            Text="Back To Menu"
+            Clicked="OnBackToMenu"
+            HorizontalOptions="Center"/>
+
     </VerticalStackLayout>
 </ContentPage>
