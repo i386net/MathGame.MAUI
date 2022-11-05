@@ -13,6 +13,9 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
 
+		//path where to db is located
+		string dbPath = Path.Combine(FileSystem.AppDataDirectory, "game.db");
+
 		return builder.Build();
 	}
 }
