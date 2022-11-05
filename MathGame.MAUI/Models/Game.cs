@@ -7,13 +7,16 @@ namespace MathGame.MAUI.Models
     {
         [PrimaryKey, AutoIncrement, Column("Id")]
         public int Id { get; set; }
-        public GameType Type { get; set; }
+        public GameOperation Type { get; set; }
         public DateTime DatePlayed { get; set; }
         public int Score { get; set; }
     }
 
-    public enum GameType
+    public enum GameOperation
     {
-        Addition, Subtraction, Multiplication, Division
+        Addition, 
+        Subtraction, 
+        Multiplication, 
+        Division,
     }
 }
