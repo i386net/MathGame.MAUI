@@ -17,7 +17,7 @@ namespace MathGame.MAUI.Data
         public void Init()
         {
             conn = new SQLiteConnection(_dbPath);
-            conn.CreateTable<Game>();
+            conn.CreateTable<Game>(); // <- submit the model of our table that was created in Game.cs
         }
     }
 }
