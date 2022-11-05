@@ -86,6 +86,8 @@ public partial class GamePage : ContentPage
 
 	private void OnBackToMenu(object sender, EventArgs e)
 	{
+		score = 0;
+		questionsLeft = totalQuestions;
 		Navigation.PushAsync(new MainPage());
 	}
 
