@@ -36,7 +36,7 @@ namespace MathGame.MAUI.Data
         public void Delete(int id)
         {
             conn = new SQLiteConnection(_dbPath);
-            conn.Delete<Game>(new { Id = id }); // check it 
+            conn.Delete(new Game{ Id = id }); // check it 
         }
     }
 }
