@@ -5,7 +5,8 @@
 
     <VerticalStackLayout
         Padding="100"
-        Spacing="25">
+        Spacing="25"
+        VerticalOptions="Center">
         <VerticalStackLayout
             x:Name="QuestionArea"
             Spacing="25">
