@@ -26,5 +26,11 @@ namespace MathGame.MAUI.Data
             Init();
             return conn.Table<Game>().ToList();
         }
+
+        public void Add(Game game)
+        {
+            conn = new SQLiteConnection(_dbPath);
+            conn.Insert(game);
+        }
     }
 }
