@@ -19,5 +19,12 @@ namespace MathGame.MAUI.Data
             conn = new SQLiteConnection(_dbPath);
             conn.CreateTable<Game>(); // <- submit the model of our table that was created in Game.cs
         }
+
+        //get data from DB
+        public List<Game> GetAllGames()
+        {
+            Init();
+            return conn.Table<Game>().ToList();
+        }
     }
 }
