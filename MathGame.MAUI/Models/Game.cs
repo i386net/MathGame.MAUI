@@ -2,7 +2,7 @@
 
 namespace MathGame.MAUI.Models
 {
-    [Table("game")]
+    [Table("game")] //name of the table that will be created at the DB
     public class Game
     {
         [PrimaryKey, AutoIncrement, Column("Id")]
