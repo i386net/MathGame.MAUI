@@ -14,6 +14,7 @@ public static class MauiProgram
 			});
 
 		//path where to db is located
+		// Dependency Injection to get access this var in other parts of program
 		string dbPath = Path.Combine(FileSystem.AppDataDirectory, "game.db");
 
 		return builder.Build();
