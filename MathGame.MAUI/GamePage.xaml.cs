@@ -1,5 +1,4 @@
 using MathGame.MAUI.Models;
-using MathGame.MAUI.Data;
 namespace MathGame.MAUI;
 
 public partial class GamePage : ContentPage
