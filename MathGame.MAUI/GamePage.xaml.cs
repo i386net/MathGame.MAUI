@@ -44,7 +44,7 @@ public partial class GamePage : ContentPage
 	}
 	private void OnAnswerSubmitted(object sender, EventArgs e)
 	{
-		//int answer = int.Parse(AnswerEntry.Text); // check for incorrect input
+		// check for incorrect input
 		int.TryParse(AnswerEntry.Text, out int answerNumber);
 		bool isCorrect = false;
 
@@ -67,7 +67,7 @@ public partial class GamePage : ContentPage
 		}
 		ProcessAnswer(isCorrect);
 		questionsLeft -= 1;
-		AnswerLabel.Text = ""; // clear label 
+		//AnswerLabel.Text = ""; // clear label 
 		if (questionsLeft > 0)
 		{
 			CreateNewQuestion();
