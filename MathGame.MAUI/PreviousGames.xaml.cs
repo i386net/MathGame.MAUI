@@ -5,6 +5,7 @@ public partial class PreviousGames : ContentPage
 	public PreviousGames()
 	{
 		InitializeComponent();
+		// gameList - x:Name from XAML
 		gamesList.ItemsSource = App.GameRepository.GetAllGames(); // add data to Prev page
 	}
 
