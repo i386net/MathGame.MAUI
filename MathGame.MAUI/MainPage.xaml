@@ -19,16 +19,6 @@
                 HorizontalOptions="Center"
                 TextColor="White"/>
             <Grid RowDefinitions="*, 150" ColumnDefinitions="*,*,*,*">
-                <!--<Grid.RowDefinitions>
-                    <RowDefinition />
-                    <RowDefinition />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions >
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>-->
                 <Button 
                     Grid.Column="0" 
                     Text="+" 

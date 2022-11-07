@@ -7,37 +7,20 @@
         <VerticalStackLayout
             Padding="50, 100, 50, 50">
             <Grid ColumnDefinitions="*,*,*,*" RowDefinitions="50">
-                <!--<Grid.RowDefinitions>
-                    <RowDefinition Height="35" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="2.5*"/>
-                    <ColumnDefinition Width="2*"/>
-                    <ColumnDefinition Width="4*"/>
-                    <ColumnDefinition Width="2*"/>
-                </Grid.ColumnDefinitions>-->
+               
                 <Label Grid.Column="0" TextColor="White" Text="Date Played" FontSize="32" HorizontalOptions="Start" />
                 <Label Grid.Column="1" TextColor="White" Text="Scores" FontSize="32" HorizontalOptions="Start"/>
                 <Label Grid.Column="2" TextColor="White" Text="Game Type" FontSize="32" HorizontalOptions="Center"/>
-                <!--<Label Grid.Column="3" TextColor="White" Text="Delete Record" FontSize="32" HorizontalOptions="Center"/>-->
+                
             </Grid>
             <CollectionView x:Name="gamesList">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Grid ColumnDefinitions="*,*,*,*" RowDefinitions="50">
-                            <!--<Grid.RowDefinitions>
-                                <RowDefinition Height="35"/>
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="2*"/>
-                                <ColumnDefinition Width="2*"/>
-                                <ColumnDefinition Width="2*"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>-->
+                            
                             <Label Grid.Column="0" Text="{Binding DatePlayed, StringFormat='{0:d}'}" FontSize="32"/>
                             <Label Grid.Column="1" Text="{Binding Score}" FontSize="32"/>
                             <Label Grid.Column="2" Text="{Binding Type}" FontSize="32"/>
-                            <!--<Button Grid.Column="3" Text="Delete" BindingContext="{Binding Id}" Clicked="OnDelete"/>-->
                             <ImageButton 
                                 Source="trash.png"
                                 Grid.Column="3"
@@ -45,6 +28,7 @@
                                 BindingContext="{Binding Id}"
                                 MinimumHeightRequest="40"
                                 MaximumWidthRequest="70"/>
+                            
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
