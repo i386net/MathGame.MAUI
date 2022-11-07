@@ -11,8 +11,8 @@ public static class MauiProgram
 			.UseMauiApp<App>()
 			.ConfigureFonts(fonts =>
 			{
-				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+				fonts.AddFont("CaveatBrush-Regular.ttf", "CaveatBrushRegular");
+				//fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
 
 		//path where to db is located
